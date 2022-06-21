@@ -11,7 +11,8 @@ class Person
     public $PASSPORT_NUMBER;
 }            
 
-class Request{
+class Request
+{
     public $productId;
     public $applicationId;
     public $person;
@@ -33,7 +34,7 @@ $req->person->INSURER_SURNAME   = "asd";
 $req->person->INSURER_EMAIL     = "ivan@ivanov.ru";
 $req->person->INSURER_BIRTHDAY  = "11.11.1999";
 $req->person->INSURER_PHONE     = "78005553535";
-$req->person->PASSPORT_NUMBER = "1231231234";   
+$req->person->PASSPORT_NUMBER   = "1231231234";   
 $req->person->INSURER_ADRESS    = "г Москва Троицкий д Романцево (Краснопахорское с/п) ул Рябиновая д. 1 корп. 2 стр. 1 кв. 45";     
 
 $result = $client->obtainCertificate($req);
